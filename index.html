@@ -17,12 +17,12 @@
     header {
       background-color: #005A9C;
       color: white;
-      padding: 20px 0;
+      padding: 30px 0;  /* Increased padding for larger logo */
       text-align: center;
     }
 
     header img {
-      max-width: 100px;
+      max-width: 200px; /* Increased size of the logo */
       height: auto;
       margin-bottom: 10px;
     }
@@ -89,6 +89,10 @@
       .section p {
         font-size: 1em;
       }
+
+      header img {
+        max-width: 180px; /* Slightly smaller on medium screens */
+      }
     }
 
     @media (max-width: 480px) {
@@ -107,6 +111,10 @@
       footer {
         font-size: 0.9em;
       }
+
+      header img {
+        max-width: 150px; /* Smaller logo on small screens */
+      }
     }
   </style>
 </head>
@@ -114,8 +122,8 @@
 
   <!-- Header with logo and company name -->
   <header>
-    <img src="logo_ferr.png" alt="Company Logo">
-    <h1>Ferrilon Consulting Inc.</h1>
+    <img src="logo.png" alt="Ferrilon Consulting Inc. Logo">
+    <h1>Ferrilon Consulting Inc.</h1> <!-- Updated Company Name -->
   </header>
 
   <!-- Main content container -->
@@ -123,14 +131,15 @@
     <!-- About Section -->
     <div class="section about">
       <h2>About Us</h2>
-      <p>Ferrilon Consulting is a forward-thinking company focused on delivering innovative solutions. Our team is dedicated to helping clients achieve their goals with expert advice. Our main goal is demonstrate trust, commitment, and excellence in everything we do.</p>
+      <p>We are a forward-thinking company focused on delivering innovative solutions. Our team is dedicated to helping clients achieve their goals with cutting-edge technology and expert advice. Our values are trust, commitment, and excellence in everything we do.</p>
     </div>
 
     <!-- Contact Section -->
     <div class="section contact-info">
       <h2>Contact Us</h2>
       <p>If you have any questions or need assistance, feel free to reach out to us via email or phone:</p>
-      <p>Email: <a href="mailto:dean@ferrilon.com">mailto:dean@ferrilon.com</a></p>
+      <p>Email: <a href="mailto:dean@ferrilon.com">dean@ferrilon.com</a></p>
+      <p>Phone: +1 (123) 456-7890</p>
     </div>
   </div>
 
