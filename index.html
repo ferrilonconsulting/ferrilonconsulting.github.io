@@ -1,47 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrilon Consulting Inc.</title>
   <style>
-    /* Base styles for the container */
-    body, html {
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      font-family: Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: rgba(90, 120, 160, 1);
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #005A9C;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
     }
 
     .container {
-      position: relative;
-      text-align: center;
-      height: 100vh; /* Full screen height */
-      width: 100%; /* Full screen width */
-      overflow: hidden;
-    }
-
-    /* Background image style */
-    .container img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Make the background image cover the container */
-      opacity: 0.6; /* Slight transparency for the background */
-      z-index: 0; /* Set background behind the content */
-    }
-
-    /* Centered content */
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 90%;
-      max-width: 400px; /* Keeps the content centered and fits in the screen */
+      max-width: 1200px;
+      margin: 20px auto;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
-      border-radius: 10px;
-      box-sizing: border-box;
-      z-index: 1; /* Makes sure the content is above the
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .contact-info a {
+      color: #005A9C;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      .section h2 {
+        font-size: 1.8em;
+      }
+
+      .section p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .section h2 {
+        font-size: 1.6em;
+      }
+
+      .section p {
+        font-size: 0.95em;
+      }
+
+      footer {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo and company name -->
+  <header>
+    <img src="logo_ferr.png" alt="Company Logo">
+    <h1>Ferrilon Consulting Inc.</h1>
+  </header>
+
+  <!-- Main content container -->
+  <div class="container">
+    <!-- About Section -->
+    <div class="section about">
+      <h2>About Us</h2>
+      <p>Ferrilon Consulting is a forward-thinking company focused on delivering innovative solutions. Our team is dedicated to helping clients achieve their goals with expert advice. Our main goal is demonstrate trust, commitment, and excellence in everything we do.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section contact-info">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out to us via email or phone:</p>
+      <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+      <p>Phone: +1 (123) 456-7890</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Company Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
