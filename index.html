@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <style>
     /* Base styles for the container and text */
     .container {
@@ -10,6 +10,7 @@
       color: rgba(90,120,160);
       font-family: Verdana, sans-serif;
       font-weight: bold;
+      overflow: hidden; /* Prevents any overflow */
     }
 
     /* Center the content */
@@ -19,52 +20,91 @@
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 20px;
+      max-width: 90%; /* Limits width */
+      box-sizing: border-box;
     }
 
     /* Table for logo and text */
     .table1 {
-      background: rgba(255,255,255,0.75);
-      padding: 30px;
-      border-radius: 8px;
+      background: rgba(255,255,255,0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      max-width: 400px; /* Keeps the content from stretching too wide */
+      margin: 0 auto;
     }
 
     /* Ensure images fit within their container */
     .imgfit {
-      max-width: 100%;
+      width: 80%;
       height: auto;
+      max-width: 200px; /* Makes logo more mobile-friendly */
+      margin: 0 auto;
+      display: block;
     }
 
-    /* Mobile-friendly font size and padding */
-    h2, h5 {
+    /* Heading styles */
+    h2 {
+      font-size: 1.4em;
       margin: 10px 0;
     }
 
-    h2 {
-      font-size: 1.6em;
-    }
-
     h5 {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      margin: 10px 0;
     }
 
-    /* Media Query for smaller screens */
+    /* Make the image background cover the full width of the screen */
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Media Query for mobile screens */
     @media screen and (max-width: 768px) {
-      .container img {
-        width: 100%;
-        height: auto;
+      .centered {
+        top: 45%; /* Moves the centered content up a bit */
+        padding: 15px;
       }
 
-      /* Adjust text size on smaller screens */
       h2 {
-        font-size: 1.4em;
+        font-size: 1.2em; /* Adjusts text size */
       }
 
       h5 {
-        font-size: 1em;
+        font-size: 1em; /* Adjusts text size */
       }
 
       .table1 {
-        padding: 20px;
+        padding: 15px;
+      }
+
+      .imgfit {
+        width: 70%;
+        max-width: 150px; /* Scales down the logo */
+      }
+    }
+
+    /* Further adjustments for very small screens */
+    @media screen and (max-width: 480px) {
+      .centered {
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 1.1em; /* Smaller font size on very small screens */
+      }
+
+      h5 {
+        font-size: 0.9em;
+      }
+
+      .imgfit {
+        width: 60%; /* Further adjusts the logo size */
+      }
+
+      .table1 {
+        padding: 10px;
       }
     }
   </style>
@@ -73,7 +113,7 @@
 
 <!-- Main container with image background -->
 <div class="container">
-  <img src="ocean.png" alt="Ocean" style="width:100%; height: auto;">
+  <img src="ocean.png" alt="Ocean">
   
   <!-- Centered content -->
   <div class="centered">
