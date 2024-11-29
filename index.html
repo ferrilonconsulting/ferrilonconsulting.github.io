@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <style>
-    /* Base styles for container */
+    /* Base styles for the container */
     body, html {
       margin: 0;
       padding: 0;
@@ -38,95 +38,4 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 90%;
-      max-width: 400px; /* Keeps the content centered and fits in the screen */
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
-      border-radius: 10px;
-      box-sizing: border-box;
-    }
-
-    /* Logo style */
-    .imgfit {
-      max-width: 100%; /* Make the logo responsive */
-      height: auto;
-      margin: 0 auto;
-      display: block;
-    }
-
-    /* Heading styles */
-    h2 {
-      font-size: 1.6em;
-      margin: 15px 0;
-    }
-
-    h5 {
-      font-size: 1.1em;
-      margin: 10px 0;
-    }
-
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-
-    /* Mobile-specific styles */
-    @media screen and (max-width: 768px) {
-      .centered {
-        width: 80%;
-        padding: 15px;
-      }
-
-      h2 {
-        font-size: 1.4em;
-      }
-
-      h5 {
-        font-size: 1em;
-      }
-
-      .imgfit {
-        max-width: 60%; /* Logo size adjusts */
-      }
-    }
-
-    /* Very small screen sizes */
-    @media screen and (max-width: 480px) {
-      .centered {
-        width: 85%;
-        padding: 10px;
-      }
-
-      h2 {
-        font-size: 1.2em; /* Smaller font size for very small screens */
-      }
-
-      h5 {
-        font-size: 0.9em;
-      }
-
-      .imgfit {
-        max-width: 50%; /* Further adjusts the logo for very small screens */
-      }
-    }
-  </style>
-</head>
-<body>
-
-<!-- Main container with background image -->
-<div class="container">
-  <img src="ocean.png" alt="Ocean"> <!-- Background image -->
-  
-  <!-- Centered content -->
-  <div class="centered">
-    <img class="imgfit" src="./logo_ferr.png" alt="Ferrilon Consulting Logo">
-  </div>
-
-  <div class="centered">
-    <h2>Ferrilon Consulting Inc.</h2>
-    <h5>Expert advice for exclusive clients.<br>
-    Learn more: <a href="mailto:dean@ferrilon.com">dean@ferrilon.com</a></h5>
-  </div>
-</div>
-
-</body>
-</html>
+      max-width: 400px; /* Keeps the cont
