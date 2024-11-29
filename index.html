@@ -29,6 +29,7 @@
       height: 100%;
       object-fit: cover; /* Make the background image cover the container */
       opacity: 0.6; /* Slight transparency for the background */
+      z-index: 0; /* Set background behind the content */
     }
 
     /* Centered content */
@@ -38,4 +39,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 90%;
-      max-width: 400px; /* Keeps the cont
+      max-width: 400px; /* Keeps the content centered and fits in the screen */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
+      border-radius: 10px;
+      box-sizing: border-box;
+      z-index: 1; /* Makes sure the content is above the
