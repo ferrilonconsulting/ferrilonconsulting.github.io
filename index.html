@@ -1,53 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-  position: relative;
-  text-align: center;
-  color: rgba(90,120,160);
-  font-family:    Verdana;
-  font-size:      12px;
-  font-weight:    bold;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Base styles for the container and text */
+    .container {
+      position: relative;
+      text-align: center;
+      color: rgba(90,120,160);
+      font-family: Verdana, sans-serif;
+      font-weight: bold;
+    }
 
-.centered {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    /* Center the content */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+    }
 
-.table1 {
-background: rgba(255,255,255,0.65);
-padding: 30px;
-} 
+    /* Table for logo and text */
+    .table1 {
+      background: rgba(255,255,255,0.75);
+      padding: 30px;
+      border-radius: 8px;
+    }
 
-.imgfit {
-  max-width: 80%;
-  max-height: 80%;
-}
-</style>
+    /* Ensure images fit within their container */
+    .imgfit {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Mobile-friendly font size and padding */
+    h2, h5 {
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    h5 {
+      font-size: 1.2em;
+    }
+
+    /* Media Query for smaller screens */
+    @media screen and (max-width: 768px) {
+      .container img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Adjust text size on smaller screens */
+      h2 {
+        font-size: 1.4em;
+      }
+
+      h5 {
+        font-size: 1em;
+      }
+
+      .table1 {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-
+<!-- Main container with image background -->
 <div class="container">
-  <img src="ocean.png" alt="Ocean" style="width:100%;">
+  <img src="ocean.png" alt="Ocean" style="width:100%; height: auto;">
+  
+  <!-- Centered content -->
   <div class="centered">
-  <table class="table1">
-  <tr>
-  <td>
-  <img class="imgfit" src="./logo_ferr.png">
-  <h2>Ferrilon Consulting Inc.</h2>
-  <h5>Expert advice for exclusive clients.<br>
-  Learn more: <a href="mailto:dean@ferrilon.com">dean@ferrilon.com</a></h5>
-  </td>
-  </tr>
-  </table>
+    <table class="table1">
+      <tr>
+        <td>
+          <img class="imgfit" src="./logo_ferr.png" alt="Ferrilon Consulting Logo">
+          <h2>Ferrilon Consulting Inc.</h2>
+          <h5>Expert advice for exclusive clients.<br>
+          Learn more: <a href="mailto:dean@ferrilon.com">dean@ferrilon.com</a></h5>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
 
 </body>
-</html> 
+</html>
