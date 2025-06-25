@@ -1,154 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ferrilon Consulting Inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet" />
   <style>
-    /* General Styles */
-    body {
-      font-family: 'Arial', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      color: #333;
-      background-color: #bfbfbf;  /* 50% Darker Gray Background */
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(circle at center, #121212, #000000);
+      color: #e0e0e0;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
 
     header {
-      color: #333; /* Dark text for contrast */
-      padding: 30px 0;
       text-align: center;
-      border-bottom: 2px solid #ccc;  /* Subtle border at the bottom */
+      padding: 4rem 2rem 2rem;
     }
 
     header img {
-      max-width: 300px; /* Larger logo size */
+      width: 160px;
       height: auto;
-      margin-bottom: 10px;
+      opacity: 0.85;
+      margin-bottom: 1rem;
     }
 
     header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      color: #005A9C;  /* Blue text for company name */
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #cfcfcf;
+      letter-spacing: 1px;
     }
 
-    .container {
-      width: 80%;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;  /* White background for content */
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .motto {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #999;
+      margin-top: 0.5rem;
     }
 
-    .section {
-      margin-bottom: 30px;
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1.2s ease-out both;
     }
 
-    .section h2 {
-      font-size: 2em;
-      color: #005A9C;  /* Matching blue for headers */
-      margin-bottom: 10px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #666;
+    section {
+      margin-bottom: 2rem;
     }
 
-    .contact-info a {
-      color: #005A9C; /* Blue for links */
+    section h2 {
+      font-size: 1.5rem;
+      color: #a0c4ff;
+      margin-bottom: 0.75rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    a {
+      color: #d4af37;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      background-color: #003366; /* Darker blue for footer */
-      color: white;
       text-align: center;
-      padding: 10px 0;
-      margin-top: 40px;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
     }
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       header h1 {
-        font-size: 2em;
+        font-size: 2rem;
       }
 
-      .container {
-        padding: 15px;
-      }
-
-      .section h2 {
-        font-size: 1.8em;
-      }
-
-      .section p {
-        font-size: 1em;
-      }
-
-      header img {
-        max-width: 250px; /* Slightly smaller logo on medium screens */
-      }
-    }
-
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.6em;
-      }
-
-      .section h2 {
-        font-size: 1.6em;
-      }
-
-      .section p {
-        font-size: 0.95em;
-      }
-
-      footer {
-        font-size: 0.9em;
-      }
-
-      header img {
-        max-width: 200px; /* Smaller logo on small screens */
+      main {
+        padding: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with logo and company name -->
   <header>
-<div class="container">
-    <img src="logo_ferr.png" alt="Ferrilon Consulting Inc. Logo"> <!-- Updated logo source -->
-    <h1>Ferrilon Consulting Inc.</h1> <!-- Updated Company Name -->
-</div>
+    <img src="logo_ferr.png" alt="Ferrilon Consulting Logo" />
+    <h1>Ferrilon Consulting</h1>
+    <div class="motto">Insight beyond the obvious.</div>
   </header>
 
-  <!-- Main content container -->
-  <div class="container">
-    <!-- About Section -->
-    <div class="section about">
-      <h2>About Us</h2>
-      <p>We are a forward-thinking company focused on delivering innovative solutions. Our team is dedicated to helping clients achieve their goals with cutting-edge technology and expert advice. Our values are trust, commitment, and excellence in everything we do.</p>
-    </div>
+  <main>
+    <section>
+      <h2>Our Approach</h2>
+      <p>Our approach goes beyond surface solutions — crafting strategies with clarity and care, for those who seek thoughtful guidance and meaningful results.</p>
+    </section>
 
-    <!-- Contact Section -->
-    <div class="section contact-info">
-      <h2>Contact Us</h2>
-      <p>If you have any questions or need assistance, feel free to reach out to us via email or phone:</p>
-      <p>Email: <a href="mailto:dean@ferrilon.com">dean@ferrilon.com</a></p>
-      <p>Phone: +1 (825) 258-5440</p> <!-- Updated phone number -->
-    </div>
-  </div>
+    <section>
+      <h2>Connect With Us</h2>
+      <p>Our relationships start with a conversation. If you’re ready to explore what’s possible, we’re ready to listen.</p>
+      <p>Email: <a href="mailto:dean@ferrilon.com">dean@ferrilon.com</a><br />
+         Phone: +1 (825) 258-5440</p>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Ferrilon Consulting Inc. All rights reserved.</p>
+    &copy; 2025 Ferrilon Consulting Inc. All rights reserved.
   </footer>
 
 </body>
